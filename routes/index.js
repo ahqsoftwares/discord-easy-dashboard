@@ -1,4 +1,4 @@
-const { Router } = require("express");
+const { Router } = require('express');
 
 const Home = Router().get("/", async (req, res) => {
     let file = req.dashboardConfig.theme["home"] || "index.ejs";
@@ -35,4 +35,4 @@ const Home = Router().get("/", async (req, res) => {
 
 module.exports.Router = Home;
 
-module.exports.name = "/";
+module.exports.name = '/';
